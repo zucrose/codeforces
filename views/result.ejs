@@ -1,0 +1,20 @@
+<table >
+
+    <tr>
+        <td>Contest Name     </td>
+        <td><%=user1 %>    </td>
+        <td><%= user2 %>    </td>
+    </tr>
+    <% arr.forEach(ele=>{  %>
+        <tr>
+            <td><%=ele.cName%>   </td>
+            <% if(ele.frank<ele.srank){%>
+                <td><strong><%=ele.frank %>    </strong></td>
+                <td><%= ele.srank %>    </td>
+            <%}else{%>
+                <td><%=ele.frank %>    </td>
+                <td><strong><%= ele.srank %>    </strong></td>
+            <%}%>
+        </tr>
+  <%  })%>
+</table>
