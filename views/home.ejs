@@ -1,34 +1,39 @@
 <%-include('components/header')%>
-    
-  <%if(checker!=="true"){ %>
-    <script>
-     alert("Not a valid username"); 
-    </script>
-   <% }%>  
-    <div >
-    <h3>Enter two usernames to compare their Ranks in contests both have taken part in:  </h3>
-    <form method="POST" action="/">
-        <div class="form-row align-items-center">
-          <div class="col-auto">
-            <label class="sr-only" for="inlineFormInput">First User</label>
-            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="User one" name="user1">
-          </div>
-          <div class="col-auto">
-            <label class="sr-only" for="inlineFormInputGroup">Username</label>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend">
-                
+<body class="bruh">
+  <div class="maindiv">
+    <%if(checker!=="true"){ %>
+      <script>
+       alert("Not a valid username"); 
+      </script>
+     <% }%>  
+      <div class="homediv">
+      <h3 class="center">Enter two usernames to compare their Ranks in contests both have taken part in:  </h3>
+      <form method="POST" action="/">
+          <div class="form-row align-items-center">
+            <div class="col-auto">
+              <label class="sr-only" for="inlineFormInput">First User</label>
+              <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="User one" name="user1">
+            </div>
+            <div class="col-auto">
+              <label class="sr-only" for="inlineFormInputGroup">Username</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="User two" name="user2">
               </div>
-              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="User two" name="user2">
+            </div>
+            
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-2 btn-center">Submit</button>
             </div>
           </div>
-          
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-2">Submit</button>
-          </div>
-        </div>
-      </form>
-    </div>
-
-
+        </form>
+      </div>
+  
+  
+  </div>
+  
+  
+</body>
 <%-include('components/footer')%>
