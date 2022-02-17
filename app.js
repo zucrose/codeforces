@@ -30,7 +30,7 @@ app.post("/",(req,res)=>{
                       arr.push( { cName:element.contestName,frank:userobj1.result[bruh].rank,srank:element.rank});
                   });
                   
-                  res.locals.title = "comparision"; 
+                  res.locals.title =user1+" VS "+ user2; 
                   res.render("result",{user1:user1,user2:user2 ,arr:arr});
                 }
                 else

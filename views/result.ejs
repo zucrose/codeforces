@@ -1,7 +1,25 @@
 
 <%-include('components/header')%>
-<body>
-<table class="table table-hover table-bordered  ">
+<body class="bgc">
+
+<% var u1cnt=0,u2cnt=0 %>
+<% arr.forEach(ele=>{  %>
+ <% if(ele.frank<ele.srank){ u2cnt++%>
+  <%}else{u1cnt++}%>
+  <%  })%>
+<div class="table-responsive tcenter">
+  <h1 class="text-center  curs"><strong class="impact"><%= user1 %> </strong> 
+    had a better rank in 
+    <strong class="impact"><%=u1cnt%> </strong>
+    contests 
+  <br>
+    <small>while</small>
+  <br>
+    <strong class="impact"><%= user2 %> </strong>
+     had a better rank in 
+     <strong class="impact"><%=u2cnt%></strong>
+     contests </h1><br>
+<table class="table table-hover table-bordered " >
   <thead class="thead-dark"> 
     <tr>
         <th>Contest Name     </td>
@@ -11,19 +29,26 @@
   </thead>
     
     <% arr.forEach(ele=>{  %>
-        <tr>
-            <td><%=ele.cName%>   </td>
-            <% if(ele.frank<ele.srank){%>
+      <% if(ele.frank<ele.srank){ %>
+              <tr class="u2">
+                <td><%=ele.cName%>   </td>
                 <td><strong><%=ele.frank %>    </strong></td>
                 <td><%= ele.srank %>    </td>
+              </tr>
             <%}else{%>
+                <tr class="u1">
+                <td><%=ele.cName%>   </td>
                 <td><%=ele.frank %>    </td>
                 <td><strong><%= ele.srank %>    </strong></td>
+                </tr>
             <%}%>
-        </tr>
+        
   <%  })%>
 
 </table>
+</div>
+
+ 
 
   
 </body>

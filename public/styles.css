@@ -1,21 +1,50 @@
 .center{
     
-    margin-top: 20%;
+    margin-top: 5%;
     padding: 5%;
-    color:mediumturquoise;
+   
    
 }
+.tcenter{
+    
+    
+    padding: 5%;
+    color:darkorchid;
+   
+}
+.bgc{
+    background-color: #fff888;
+}
+.u1{
+    background-color: #ffc0cb;
+}
+.u2{
+    background-color:#fd8585;
+}
+
+.impact{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+}
+.curs{
+   font-family: cursive;
+}
+
 .homediv{
-    text-align: center;
-    margin:10% 35%;
+   
+    margin: 10% 0%;
+    font-family:cursive;
+    color: #c32148;
+    background-color: #ffc0cb;
+    padding: 5%;
+    
+
     
 }
 .btn-center{
     margin:0% 200%;
 }
-.maindiv{
-    background-color:aliceblue ;
+.bodycol{
+    background-color:#ffe0bd ;
 }
-.bruh{
-    background-color:#fdf9f3;
-}
+
